@@ -1,0 +1,36 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "Hi! It's my first project made by myself!\r I've tried to use Git for the first time to commit my project. I used SASS, HTML and JS. \r The project is adaptive, you can try it on your phone. \r Thank you for attention!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanakoroleva3/My-first-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanakoroleva3/My-first-project/issues"
+  },
+  "homepage": "https://github.com/yanakoroleva3/My-first-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.51.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

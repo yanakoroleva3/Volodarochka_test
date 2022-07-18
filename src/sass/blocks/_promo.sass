@@ -1,0 +1,142 @@
+.promo
+	min-height: 1400px
+	background: url(../images/bg/main_bg.png) center center/cover no-repeat
+	padding: 30px 60px 0 60px
+	&__wrap
+		margin-top: 10px
+		display: flex
+		justify-content: space-between
+		min-height: 700px
+	&__title__wrap
+		height: 250px
+		width: 900px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		z-index: 1
+	&__title__main
+		font-weight: 800
+		font-size: 55px
+		line-height: 95%
+		color: #B69D86
+		span
+			color: $hover-color
+	&__item
+		width: 500px
+		transform: translateY(30%)
+		&__video__wrap
+			&::before
+				content: ''
+				background: url(../icons/Default_video.png) center center/cover no-repeat
+				display: block
+				position: absolute
+				transform: translate(250%, 105%)
+				width: 70px
+				height: 70px
+				cursor: pointer
+		&__subtitle
+			font-weight: 700
+			font-size: 26px
+			line-height: 110%
+			color: $text-color
+			margin-top: 50px
+		&__descr
+			font-weight: 500
+			font-size: 16px
+			line-height: 130%
+			color:$text-color
+			margin-top: 20px
+		&__sign
+			width: 500px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 20px
+			
+			&__text
+				margin-right: 90px
+			&__dir
+				font-weight: 500
+				font-size: 14px
+				line-height: 22px
+				color:$text-color
+			&__name
+				font-weight: 500
+				font-size: 16px
+				line-height: 22px		
+		&__link
+			font-weight: 700
+			font-size: 18px
+			line-height: 120%
+			color: $hover-color
+			text-decoration: none
+			position: relative
+			margin-right: 24px
+			&::after
+				content: ''
+				background: url(../icons/Stroke.svg) center center/cover no-repeat
+				position: absolute
+				right: -24px
+				top: 2px
+				display: block
+				width: 16px
+				height: 16px
+			&:hover 
+				color: $text-color
+				transition: 0.5s all
+				&::after
+					content: ''
+					background: url(../icons/stroke2.svg) center center/cover no-repeat
+					transition: 0.5s all
+	&__products
+		width: 1800px
+		display: flex
+		justify-content: space-between
+		margin-top: 140px
+		&__item
+			background: url(../images/cards/card_bg.png) center center/cover no-repeat
+			width: 332px
+			height: 298px
+			padding: 0 26px
+			&__img
+				transform: translateY(-15%)
+			&__subtitle
+				display: block
+				text-align: center
+				text-decoration: none
+				font-weight: 700
+				font-size: 26px
+				color: #1C1616
+				position: relative
+				&:hover
+					color:$hover-color
+					display: flex
+					justify-content: space-evenly
+					align-items: center
+					&::after
+						content: ''
+						background: url(../icons/card_stroke.svg)
+						width: 43px
+						height: 23px
+						
+							
+
+							
+							
+							
+							
+
+
+
+
+
+					
+					
+				
+					
+					
+
+
+
+
+		

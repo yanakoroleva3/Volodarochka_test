@@ -1,0 +1,123 @@
+header
+	background: $bg_color
+.header
+	max-width: 1484px
+	margin:0 auto
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__social
+		display: flex
+		justify-content: space-between
+		min-width: 152px
+		margin-right: 240px
+		&__item
+			margin-right: 8px
+	&__lang
+		margin-right: 180px
+		font-weight: 500
+		font-size: 16px
+		color: $text-color
+		position: relative
+		&::after
+			content: ''
+			background: url(../icons/lang.svg) center center/cover no-repeat
+			width: 10px
+			height: 6px
+			position: absolute
+			left: 25px
+			top: 8px
+			display: block
+			cursor: pointer
+	&__logo
+		margin-right: 180px
+		max-width: 260px
+		position: relative
+		&::before
+			content: ''
+			width: 580px
+			height: 1px
+			background-color: #A4A4A4
+			position: absolute
+			left: -610px
+			top: 40px
+		&::after
+			content: ''
+			width: 580px
+			height: 1px
+			background-color: #A4A4A4
+			position: absolute
+			right: -610px
+			top:40px
+	&__phone
+		display: block
+		margin-right: 180px
+		font-weight: 800
+		font-size: 18px
+		color: $text-color
+		text-decoration: none
+	&__search
+		display: block
+		width: 24px
+		margin-right: 20px
+	&__menu
+		margin: 0 auto
+		width: 880px
+		min-height: 47px
+		margin-top: 15px
+		padding: 15px 83px
+		background-color: #FFFFFF
+		border-radius: 10px
+		&__more
+			display: none
+			padding: 32px 0 39px 0
+			display: flex
+			justify-content: space-between
+			&__item
+				display: flex
+				flex-direction: column
+				align-items: center
+				width: 170px
+				&__img
+					width: 40px
+					height: 43px
+				&__subtitle
+					font-weight: 500
+					font-size: 16px
+					color: $text-color
+					text-align: center
+					text-decoration: none
+					position: relative
+					&:hover 
+						color: $hover-color
+						&::after
+							position: absolute
+							content: ''
+							background: url(../icons/stroke.svg) center center/cover no-repeat
+							width: 9px
+							height: 9px
+							top:6px
+							right: -20px
+		&__links
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0 auto
+			padding: 0
+		&__item
+			list-style-type: none
+			margin-right: 50px
+			&:last-child
+				margin: 0px
+		&__link
+			text-decoration: none
+			font-weight: 700
+			font-size: 18px
+			color: $text-color
+			&:hover
+				color: $hover-color
+				transition: 0.5s all
+			&:active
+				color: $hover-color
+				border-bottom: 2px $hover-color
+
