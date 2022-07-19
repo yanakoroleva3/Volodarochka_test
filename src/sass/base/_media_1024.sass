@@ -1,3 +1,311 @@
-@media max-width 1023px {
+@media screen and (max-width: 1024px) 
+	.header
+		max-width: 970px
+		margin: 0 auto
+		&__social
+			margin-right: 70px
+		&__lang
+			margin-right: 55px
+		&__logo
+			margin-right: 55px
+			&::before
+				content: ''
+				width: 320px
+				height: 1px
+				background-color: #A4A4A4
+				position: absolute
+				left: -330px
+				top: 40px
+			&::after
+				content: ''
+				width: 350px
+				height: 1px
+				background-color: #A4A4A4
+				position: absolute
+				right: -370px
+				top:40px
+		&__phone
+			margin-right: 55px
+		&__search
+			margin-right: 0px
+	.promo
+		padding: 30px 27px 0 27px
+		&__wrap
+			margin-top: 30px
+			flex-wrap: wrap
+		&__title__wrap
+			height: 250px
+			width: 939px
+		&__title__main
+			font-size: 55px
+		&__title__img
+			margin-right: 16px
+		&__item
+			width: 966px
+			display: flex
+			flex-direction: row
+			margin-top: 50px
+			&__text__wrap
+				margin-left: 62px
+				align-self: flex-start
+				transform: translateY(-20%) 
+			.promo__item__sign
+					width: 480px
+		&__products
+			width: 870px
+			display: flex
+			justify-content: space-evenly
+			flex-wrap: wrap
+			align-items: flex-start
+			margin: 0 auto
+			margin-top: 40px
+			&__item
+				margin-right: 15px
+				margin-bottom: 30px
+				width: 270px
+				height: 240px
+				padding: 0 26px
+				&:nth-child(4)
+					margin-left: 150px
+				&:nth-child(5)
+					margin-right: 150px
+				&__img
+					width: 211px
+				&__subtitle
+					font-size: 18px
+		
+	.owl-carousel
+		width: 965px
+		&-item
+			background: url(../images/promo/slider1024bg.png) center center/cover no-repeat
+			width: 965px
+			min-height: 364px
+			padding: 111px 86px 0 97px
+			&-2
+				background: url(../images/promo/slider1024bg2.png) center center/cover no-repeat
+			&-img
+				display: block
+				width: 250px
+				left: 27px
+				top: -118px
+			&-title
+				font-size: 26px
+				width: 400px
+			&-descr
+				width: 350px
+				font-size: 18px
+				margin-top: 8px
+		.owl-dots 
+			left: 100px
+			top: 50px
+
+	.path
+		min-height: 626px
+		.path__img__1
+			width: 359px
+			height: 146px
+			left:15%
+			top:3%
+		.path__img__2
+			width: 511px
+			height: 159px
+			left:15%
+			z-index: 1
+			bottom: -24%
+		&__wrap
+			padding: 0 27px 
+			align-items: center
+			&__img
+				display: block
+				width: 618px
+				height: 416px
+			&__text
+				transform: translateY(-15%)
+
+	.video
+		min-height: 300px
+		background: url(../images/bg/vidbg1024.png) center center/cover no-repeat
+		&__wrap
+			width: 997px
+			padding-right: 50px
+			.video__img1024__wrap
+				display: block
+			.video__img1920__wrap
+				display: none
+			&__text
+				width: 450px
+				margin-left: 30px
 	
-}
+	.clean
+		min-height: 1297px
+		&__wrap
+			padding: 70px 27px 0 27px
+			position: relative
+			&__img
+				width: 437px
+				height: 397px
+			&__plag
+				border-radius: 8px
+				padding: 16px
+				width: 230px
+				height: 100px
+				position: absolute
+				right:27px
+		&__img__4
+			display: block
+			right: 26%
+			top:18%
+			transform: scale(1,-1) rotate(30deg)
+		&__img__3__wrap
+			display: none
+		&__img__5__wrap
+			display: none
+		&__img__6__wrap
+			display: none
+		&__img__6__wrap__1024
+			display: block
+		&__img__6__1024
+			position: absolute
+			bottom: -172%
+			right: 37%
+		&__info
+			padding:43px 80px 0px 80px
+			flex-wrap: wrap-reverse
+			justify-content: space-evenly
+			&__item
+				display: flex
+				flex-direction: column
+				align-items: center
+				vertical-align: top
+				max-width: 390px
+				margin-right: 40px
+				&:first-child
+					margin-top: 70px
+			.title_info, .descr_info
+				text-align: center
+	.factory
+		min-height: 300px
+		background: url(../images/bg/factory1024bg.png) center center/cover no-repeat
+		&__wrap
+			width: 997px
+			padding-right: 20px
+			.factory__img1024__wrap
+				display: block
+			.factory__img1920__wrap
+				display: none
+			&__text
+				width: 450px
+				margin-left: 30px
+			&__plag
+				width: 269px
+				height: 142px
+				border-radius: 8px
+				position: absolute
+				right: 5%
+				bottom: -70%
+			.factory__img__7
+				top:95%
+				right: 17%
+
+	.types
+		min-height: 617px
+		&__wrap
+			margin-top: 300px
+			padding: 0 27px 
+			&__img
+				width: 564px
+				height: 384px
+			&__icon
+				right: 15%
+			.types__img__8
+				width: 499px
+				height: 307px
+				left:15%
+				top:-75%
+			.types__img__9
+				width: 348px
+				height: 194px
+				left:15%
+				z-index: 1
+				bottom: -50%
+			
+	.packing
+		&__wrap
+			padding: 0 27px
+	
+	.map
+		padding: 95px 27px 78px 27px
+		min-height: 740px
+		&__img
+			width: 918px
+			height: 567px
+
+	.form
+		min-height: 710px
+		&__first
+			width: 293px
+			height: 243px
+		&__second
+			widht:238px
+			height: 243px
+		&__wrap
+			padding: 53px 75px 100px 75px
+			flex-direction: column
+			align-items: flex-start
+			&__text
+				width: 100%
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				&__titledescr
+					width: 305px
+					margin-right: 300px
+				&__tel
+					transform: translateY(-17%)
+			&__main 
+				margin-top: 70px
+		.btn_form
+			margin: 0 auto
+
+	.footer
+		min-height: 480px
+		&__wrap
+			padding: 40px 27px 31px 27px
+			flex-wrap: wrap
+			align-items: stretch
+			justify-content: space-evenly
+			&__media
+				align-self: flex-end
+				margin: 0
+				transform: translate(140%, -45%)
+			&__copy
+				bottom: 30px
+				left:27px
+			&__politics
+				bottom: 30px
+				left: 180px
+				&::after
+					right: 63%
+			&__menu
+				width: 550px
+				margin: 0 auto
+				&__item
+					.title_footer
+						font-size: 22px
+				&__part
+						li
+							margin-top: 8px
+			&__address
+				margin-right: 5px
+				width: 220px
+				&__name
+					font-weight: 500
+					font-size: 18px
+					margin-top: 120px
+				&__logo
+					width: 168px
+					height:107px
+
+
+
+
