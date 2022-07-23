@@ -18,6 +18,11 @@
     <div class="container">
         <header class="header">
             <div class="header__wrap">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="header__lang">Ru</div>
                 <div class="header__social">
                     <div class="header__social__item">
@@ -52,13 +57,16 @@
 
                     <a href="tel:+78312289080" class="header__phone">+7 (831) 228-90-80</a>
 
-                    <a href="#" class="header__search">
-                        <img src="icons/search.svg" alt="search" class="header__search__img">
-                    </a>
-
-                    <a href="#" class="header__cart">
-                        <img src="icons/cart.svg" alt="cart" class="header__cart__img">
-                    </a>
+                    <div class="header__icons">
+                        <a href="#" class="header__search">
+                            <img src="icons/search.svg" alt="search" class="header__search__img">
+                        </a>
+    
+                        <a href="#" class="header__cart">
+                            <img src="icons/cart.svg" alt="cart" class="header__cart__img">
+                        </a>
+                    </div>
+                    
             </div>
        
             <nav class="header__menu">
@@ -70,10 +78,10 @@
                         <a href="#" class="header__menu__link">Услуги</a>
                     </li>
                     <li class="header__menu__item">
-                        <a href="#" class="header__menu__link menu_open" onclick="myFunction()">Клиентам </a>
+                        <a href="#" class="header__menu__link">Клиентам </a>
                     </li>
                     <li class="header__menu__item">
-                        <a href="#" class="header__menu__link">О нас</a>
+                        <a href="#" class="header__menu__link menu_open" onclick="myFunction()">О нас</a>
                     </li>
                     <li class="header__menu__item">
                         <a href="#" class="header__menu__link">Новости</a>
@@ -86,23 +94,24 @@
                 <div class="header__menu__more" id="header__more">
                     <div class="header__menu__more__content">
                         <div class="header__menu__more__content__item">
-                            <img src="icons/header_more/factory.svg" alt="1" class="header__menu__more__item__img">
+                            <img src="icons/header_more/factory.svg" alt="1" class="header__menu__more__content__item__img">
                             <a href="#" class="header__menu__more__content__item__subtitle">Наша компания</a>
                         </div>
                         <div class="header__menu__more__content__item">
-                            <img src="icons/header_more/history.svg" alt="2" class="header__menu__more__item__img">
+                            <img src="icons/header_more/history.svg" alt="2" class="header__menu__more__content__item__img">
                             <a href="#" class="header__menu__more__content__item__subtitle">История комбината</a>
                         </div>
                         <div class="header__menu__more__content__item">
-                            <img src="icons/header_more/document.svg" alt="3" class="header__menu__more__item__img">
+                            <img src="icons/header_more/document.svg" alt="3" class="header__menu__more__content__item__img">
                             <a href="#" class="header__menu__more__content__item__subtitle">Документы</a>
                         </div>
                         <div class="header__menu__more__content__item">
-                            <img src="icons/header_more/camera.svg" alt="4" class="header__menu__more__item__img">
+                            <img src="icons/header_more/camera.svg" alt="4" class="header__menu__more__content__item__img">
                             <a href="#" class="header__menu__more__content__item__subtitle">Фото-видео</a>
                         </div>
                     </div>
                 </div>
+
             </nav>
         </header>
         <div class="promo__title__wrap">
@@ -124,7 +133,9 @@
                         <div class="owl-carousel-item-title">Большие объемы призводимой продукции</div>
                         <div class="owl-carousel-item-descr">700 тонн - производимая способность комбината “Володарский”
                          </div>
-                         <img src="images/promo/promo_card_2.png" alt="slider2" class="owl-carousel-item-img">
+                         <div class="owl-carousel-item-img-wrap">
+                            <img src="images/promo/promo_card_2.png" alt="slider2" class="owl-carousel-item-img">
+                         </div>
                         <button class="btn btn_slider">Заказать поставку</button>
                         
                     </div>
@@ -197,6 +208,7 @@
         
         <div class="path__wrap">
             <img src="images/way/path_1.png" alt="1" class="path__img__1">
+            <img src="images/bg/line-390.png" alt="1" class="path__img__390__1">
             <div class="path__wrap__text">
                 <div class="title title_buy">Закупка зерна</div>
                 <div class="descr descr_buy">Мы закупаем зерно только у агрохолдингов с проверенной 
@@ -215,8 +227,9 @@
             <!--             <video src="" class="video__video"></video>
              -->            <div class="video__img1920__wrap"><img src="images/bg/video_img.png" alt="" class="video__img"></div>
                             <div class="video__img1024__wrap"><img src="images/bg/vid1024.png" alt="" class="video__img1024"></div>
+                            <div class="video__img390__wrap"><img src="images/bg/video__img390.png" alt="" class="video__img390"></div>
                         <div class="video__wrap__text">
-                            <div class="title">Около 2 000 тонн</div>
+                            <div class="title title_video">Около 2 000 тонн</div>
                             <div class="descr descr_video">Приемка зерна 
                                 автотранспортом в сутки</div>
                         </div>
@@ -228,6 +241,7 @@
 <section class="clean">
     <div class="container">
         <div class="clean__wrap">
+            <img src="images/bg/line-390.png" alt="" class="clean__img__390__2">
            <div class="clean__img__3__wrap"> <img src="images/way/path_3.png" alt="" class="clean__img__3"></div> 
             <div class="clean__wrap__text">
                 <div class="title title_clean">Очистка зерна</div>
@@ -266,6 +280,7 @@
             </div>
             
         </div>
+        <img src="images/bg/line-390.png" alt="" class="clean__img__390__3">
     </div>
 </section>
 
@@ -274,8 +289,9 @@
         <div class="factory__wrap">
             <div class="factory__img1920__wrap"><img src="images/bg/factory_image.png" alt="" class="factory__img"></div>
                     <div class="factory__img1024__wrap"><img src="images/bg/factory1024.png" alt="" class="factory__img1024"></div>
+                    <div class="factory__img390__wrap"><img src="images/bg/factory_img390.png" alt="" class="factory__img390"></div>
                    <div class="factory__wrap__text">
-                      <div class="title">Три производственные линии
+                      <div class="title title_factory">Три производственные линии
                       </div>
                       <div class="descr descr_factory">Наконец, подготовленные виды зерна отправляются в размольное отделение, 
                           где cначала дробятся в крупку, а потом 
@@ -305,6 +321,7 @@
             <img src="icons/100_icon.png" alt="100%" class="types__wrap__icon">
             <img src="images/way/30vidov_image.png" alt="types" class="types__wrap__img">
             <img src="images/way/path_9.png" alt="2" class="types__img__9">
+            <img src="images/bg/line-390.png" alt="" class="clean__img__390_4">
         </div>
     </div>
 </section>
@@ -312,11 +329,11 @@
 <section class="packing">
     <div class="container">
         <div class="packing__wrap">
-            <div class="title">Фасовка</div>
+            <div class="title title_sort">Фасовка</div>
             <div class="descr descr_sort">Произведенную продукцию фасовывют
                 и развозят по предприятиям, магазинам 
                и фермам</div>
-            <div class="title title_drive">Бестарная фасовка</div>
+            <div class="title title_car">Бестарная фасовка</div>
             <div class="descr descr_car">Муковоз</div>
             <img src="images/way/car_image.png" alt="car" class="packing__wrap__car">
             <div class="title title_options">Варианты упаковки</div>
@@ -338,6 +355,7 @@
 <section class="map">
     <div class="container">
             <img src="images/bg/map_img.png" alt="map" class="map__img">
+            <img src="images/bg/map_390.png" alt="map" class="map__img__390">
     </div>
 </section>
 
@@ -386,8 +404,8 @@
 
             <div class="footer__wrap__menu">
                 <div class="footer__wrap__menu__item">
-                    <div class="title title_footer">Продукция</div>
-                    <ul class="footer__wrap__menu__part">
+                    <div class="title title_footer footer__more__1" onclick="footerMoreFirst()">Продукция</div>
+                    <ul class="footer__wrap__menu__part" id="footer__menu__more__first" class="footer__more">
                         <li><a href="" class="footer__wrap__menu__part__link">Пшеничная мука</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">Ржаная мука</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">Отруби</a></li>
@@ -395,8 +413,8 @@
                     </ul>
                 </div>
                 <div class="footer__wrap__menu__item">
-                    <div class="title title_footer">О компании</div>
-                    <ul class="footer__wrap__menu__part">
+                    <div class="title title_footer  footer__more__2" onclick="footerMoreSecond()">О компании</div>
+                    <ul class="footer__wrap__menu__part" id="footer__menu__more__second" class="footer__more">
                         <li><a href="" class="footer__wrap__menu__part__link">Наша компания</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">История</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">Документы</a></li>
@@ -406,8 +424,8 @@
                     </ul>
                 </div>
                 <div class="footer__wrap__menu__item">
-                    <div class="title title_footer">Клиентам</div>
-                    <ul class="footer__wrap__menu__part">
+                    <div class="title title_footer footer__more__3"  onclick="footerMoreThird()">Клиентам</div>
+                    <ul class="footer__wrap__menu__part" id="footer__menu__more__third" class="footer__more">
                         <li><a href="" class="footer__wrap__menu__part__link">Вопрос/ответ</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">Потребителям</a></li>
                         <li><a href="" class="footer__wrap__menu__part__link">Услуги элеватора</a></li>

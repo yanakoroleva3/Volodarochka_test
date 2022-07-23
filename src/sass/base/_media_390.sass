@@ -1,0 +1,565 @@
+@media screen and (min-width: 389px) and (max-width:470px)
+	.header
+		max-width: 390px
+		&__wrap
+			flex-flow: column wrap
+			align-items: center
+			.hamburger
+				display: block
+				position: absolute
+				left: 15px
+				top: 50px
+				transform: translateY(-50%) 
+				width: 26px
+				height: 28px
+				z-index: 3
+				span
+					display: block
+					height: 2px
+					width: 100%
+					background-color:$text_color
+					margin-bottom: 5px
+					transition: 0.5s all
+				&_active
+					span 
+						margin-bottom: -2px 
+						&:nth-child(1)
+							transform: translateY(3px) rotate(-45deg)
+						&:nth-child(2)
+							display: none
+						&:nth-child(3)
+							transform: translateY(3px) rotate(45deg)
+		&__lang
+			display: none
+		&__logo
+			margin: 0 auto
+			order: -1
+			&__img
+				width: 151px
+				height: 33px
+			&::before
+				display: none
+			&::after
+				width: 355px
+				left: -100px
+		&__social
+			margin: 0 auto
+			width: 240px
+			margin-top: 14px
+			&__icon
+				display: block
+				width: 32px
+				height: 32px
+		&__icons
+			position: absolute
+			align-self: flex-end
+			top: 30px
+			width: 60px
+		&__phone
+			margin: 0 auto
+			margin-top: 18px
+			position: relative
+			&::after
+				content: ''
+				background: url(../icons/phone_390.svg) center center/cover no-repeat
+				width: 20px
+				height: 20px
+				position: absolute
+				right: -25px
+		&__menu
+			z-index: 2
+			top: 15px
+			width: 100%
+			min-height: 600px
+			padding:0
+			padding-top: 30px
+			position: absolute
+			background-color: #F7F7F7
+			left: -110%
+			.header__menu__more__content
+				flex-direction: column
+				align-items: flex-start
+				&__item
+					align-items: flex-start
+			&_active
+				left:10px
+			&__links
+				flex-direction: column
+				align-items: flex-start
+				background-color: #F7F7F7
+			&__link
+				font-size: 22px
+			&__item
+				position: relative
+				margin-bottom: 30px
+				&::after
+					content: ''
+					width: 345px
+					height: 1px
+					background-color: #A4A4A4
+					position: absolute
+					left: 0px
+					top: 40px
+			
+	.promo
+		padding: 30px 10px 0 10px
+		&__title__wrap
+			width: 380px
+			height: 183px
+			transform: translateY(12%)
+		&__title__main
+			font-weight: 700
+			font-size: 26px
+		&__title__img
+			height: 183px
+			margin-right: 20px
+		&__wrap
+			margin-top: 0
+			flex-direction: column
+		&__item
+			flex-direction: column
+			width: 365px
+			margin: 0 auto
+			margin-top: 30px
+			&__text__wrap
+				width: 365px
+				margin: 0
+				transform: translateY(0)
+			&__subtitle
+				margin-top: 20px
+			&__video
+				width: 350px
+			&__video__wrap
+				&::before
+					transform: translate(200%, 100%)
+			&__link
+				transform: translate(-210%, 350%)
+		&__products
+			margin: 0 auto
+			width: 365px
+			display: flex
+			justify-content: space-evenly
+			align-items: center
+			margin-top: 100px
+			&__item
+				width: 164px
+				height: 186px
+				padding: 0 10px
+				border-radius: 8px
+				&:nth-child(4)
+					margin-left: 0px
+				&:nth-child(5)
+					margin-right: 0px
+				&__img
+					width: 138px
+					height: 116px
+					margin: 0 auto
+					display: block
+				&__subtitle
+					font-size: 18px
+					&:hover
+						color:#1C1616
+						display: flex
+						justify-content: space-evenly
+						align-items: center
+						&::after
+							content: none
+							background: url(../icons/card_stroke.svg)
+							width: 0px
+							height: 0px
+		
+				
+	.owl-carousel
+		width: 365px
+		margin: 0 auto
+		&-item
+			background: url(../images/promo/card_bg_390.png) center center/cover no-repeat
+			width: 365px
+			min-height: 481px
+			padding: 111px 30px 0 30px
+			&-2
+				background: url(../images/promo/card_bg_390_2.png) center center/cover no-repeat
+			&-img-wrap
+				display: none
+			&-title
+				font-size: 22px
+				width: 330px
+			&-descr
+				width: 300px
+				font-size: 18px
+				margin-top: 8px
+			.btn_slider
+				display: block
+				position: relative
+				left: 15%
+		.owl-dots 
+			left: 35px
+			top: 50px
+
+	.path
+		min-height: 788px
+		.title_path
+			margin-top: 100px
+		.path__img__1
+			display: none
+		.path__img__2
+			display: none
+		.path__img__390__1
+			margin-top: 10px
+			display: block
+			order: -2
+		&__wrap
+			padding: 0 15px 
+			align-items: center
+			flex-flow: column wrap
+			&__img
+				order: -1
+				display: block
+				width: 365px
+				height: 268px
+				margin: 0 auto
+			&__text
+				.title_buy
+					margin-top: 30px
+					font-size: 26px
+					font-weight: 700
+				.descr_buy
+					font-size: 16px
+					width: 300px
+	
+	.video
+		min-height: 379px
+		background: url(../images/bg/vidbg1024.png) center center/cover no-repeat
+		&__wrap
+			overflow: hidden
+			margin: 0 auto
+			display: flex
+			flex-direction: column
+			width: 390px
+			align-items: flex-start
+			padding-right: 17px
+			.video__img390__wrap
+				display: block
+				widht: 100%
+				.video__img390
+					width: 100%
+					display: block
+			.video__img1024__wrap
+				display: none
+			&__text
+				margin-bottom: 63px
+				margin-top: 30px
+				width: 270px
+				margin-left: 30px
+				.title_video
+					font-size: 26px
+					font-weight: 700
+				.descr_video
+					font-size: 16px
+	
+	.clean
+		min-height: 1355px
+		&__wrap
+			padding: 0px 15px 0 15px
+			position: relative
+			align-items: center
+			flex-flow: column wrap
+			margin-top: 25px
+			&__img
+				width: 273px
+				height: 248px
+				order: -1
+				margin-top: 10px
+			&__plag
+				display: none
+			&__text
+				align-self: flex-start
+				margin-top: 20px
+				width: 270px
+				.title_clean
+					font-size: 26px
+					font-weight: 700
+				.descr_clean
+					font-size: 16px
+		&__img__4
+			display: none
+		&__img__3__wrap
+			display: none
+		&__img__5__wrap
+			display: none
+		&__img__6__wrap
+			display: none
+		&__img__6__wrap__1024
+			display: none
+		&__img__390__2
+			display: block
+			order: -2
+		&__img__390__3
+			margin: 10px auto
+			display: block
+		&__info
+			padding: 0px 58px 0px 58px
+			flex-wrap: wrap
+			justify-content: space-evenly
+			&__item
+				display: flex
+				flex-direction: column
+				align-items: center
+				vertical-align: top
+				max-width: 390px
+				margin-right: 0px
+				margin-top: 60px
+			.clean__info__item__img
+				width: 85px
+				height: 85px
+			.title_info, .descr_info
+				text-align: center
+			.title_info
+				font-weight: 700
+				font-size: 22px
+			.descr_info
+				font-weight: 500
+				font-size: 14px
+
+	.factory
+		min-height: 379px
+		background: #FAFAFA
+		&__wrap
+			margin: 0 auto
+			display: flex
+			flex-direction: column-reverse
+			width: 390px
+			align-items: center
+			padding-right: 17px
+			.factory__img390
+				display: block
+				width: 100%
+			.factory__img1024__wrap
+				display: none
+			&__text
+				max-width: 350px
+				margin-bottom: 30px
+				margin-top: 30px
+				margin-left: 30px
+				.title_factory
+					font-size: 26px
+					font-weight: 700
+				.descr_factory
+					font-size: 16px	
+					width: 300px
+			&__plag
+				width: 275px
+				height: 142px
+				background: #F4EEE5
+				padding: 30px
+				border-radius: 8px
+				position: absolute
+				right: 10%
+				bottom: -50%
+
+	.types
+		min-height: 640px
+		&__wrap
+			margin-top: 250px
+			padding: 0 15px 
+			flex-flow: column wrap
+			&__text
+				margin-top: 30px
+				width: 365px
+				margin-right: 0px
+				.title_types
+					font-weight: 700
+					font-size: 26px
+				.title_descr
+					font-size: 16px
+				.btn_types
+					margin-bottom: 40px
+			&__img
+				order: -1
+				width: 352px
+				height: 240px
+				margin: 0 auto
+			&__icon
+				right: 15%
+		&__img__8
+			display: none
+		&__img__9
+			display: none
+
+	.packing
+		min-height: 800px
+		&__wrap
+			padding: 0 15px
+			.title_sort
+				font-weight: 700
+				font-size: 26px
+			.descr_sort
+				width: 330px
+				font-size: 16px
+			.title_car
+				margin-top: 65px
+			&__car
+				width: 351px
+				height: 115px
+				display: block
+				margin-top: 50px
+			&__bag
+				display: block
+				margin-top: 20px
+				width: 352px
+				height: 247px
+			&__text
+				width: 360px
+				display: flex
+				justify-content: space-evenly
+				align-items: center
+				margin-bottom: 15px
+				.descr_bag
+					font-size: 18px
+					&:nth-child(2)
+						transform: translateY(-60%)
+			.title_delivery
+				font-weight: 700
+				font-size: 26px
+			.descr_delivery
+				width: 330px
+				font-size: 16px
+		
+	.map
+		min-height: 350px
+		padding: 0 
+		background: #FFFF
+		&__img
+			display: none
+		&__img__390
+			display: block
+			margin: 0 auto
+
+	.form
+		min-height: 1000px
+		&__first
+			display: none
+		&__second
+			display: none
+		&__wrap
+			padding: 35px 15px
+			flex-direction: column
+			align-items: flex-start
+			&__text
+				width: 100%
+				display: flex
+				flex-direction: column
+				padding-right: 0
+				&__titledescr
+					width: 350px
+					margin-right: 100px
+			&__main 
+				margin-top: 60px
+				flex-flow: column wrap
+				&__inputs
+					order: -1
+					padding-left: 0
+					transform: translateY(-6%)
+					display: flex
+					align-items: flex-start
+					flex-direction: column
+				input
+					width: 350px
+				&__check
+					order: 2
+			textarea
+				width: 350px
+				order:0
+	
+	.footer
+		margin-top: -30px
+		min-height: 900px
+		background: url(../images/bg/footer_390bg.png) center center/cover no-repeat
+		&__wrap
+			padding: 30px 15px 83px 15px
+			flex-direction: column
+			align-items: stretch
+			justify-content: space-evenly
+			&__menu
+				width: 350px
+				flex-direction: column
+				margin: 110px 0 64px 0
+				&__item
+					padding-bottom: 15px
+					margin-bottom: 20px
+					border-bottom: 2px #664B42 solid
+				&__part
+					margin-bottom: 15px
+					display: none
+					&__link
+						display: block
+						width: 352px
+						height: 45px
+						background: #FFFF
+						border-radius: 4px
+						text-decoration: none
+						padding: 12px 0px 12px 12px
+					.title_footer
+						margin-top: 24px
+						position: relative
+						&::after
+							content: ''
+							background: url(../icons/footer_stroke.svg) center center/cover no-repeat
+							width: 20px
+							height: 11px
+							position: absolute
+							left: 140px
+							top: 8px
+							display: block
+							cursor: pointer
+				.show
+					display: block
+			&__address
+				margin-right: 0px
+				img
+					display: block
+					width: 104px
+					height: 67px
+				&__name
+					margin: 0
+					position: absolute
+					bottom: 90px
+					left: 25%
+					font-weight: 500
+					font-size: 14px
+					width: 220px
+			&__media
+				left:-370px
+				top: 100px
+				position: absolute
+				align-self: flex-start
+				align-items: flex-end
+				width: 300px
+				&__tel
+					font-size: 22px
+				&__post 
+					font-size: 18px
+				&__social
+					align-self: center
+					width: 180px
+					margin-top: 37px
+				&__shop
+					align-self: center
+					transform: translateX(-10%)
+			&__politics
+				text-align: center
+				left: 30px
+				bottom: 50px
+				&::after
+					right: -3%
+			&__copy
+				left: 110px
+				bottom: 30px
+				text-align: center
+
+			
+		
+
+
+
+	

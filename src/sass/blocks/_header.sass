@@ -56,6 +56,9 @@ header
 		font-size: 18px
 		color: $text-color
 		text-decoration: none
+	&__icons
+		display: flex
+		justify-content: space-between
 	&__search
 		display: block
 		width: 24px
@@ -68,10 +71,12 @@ header
 		padding: 15px 83px
 		background-color: #FFFFFF
 		border-radius: 10px
+		.humburger
+			display: none
 		&__more
 			display: none
 			&__content
-				padding: 32px 0 39px 0
+				padding: 32px 0 32px 0
 				display: flex
 				justify-content: space-between
 				&__item
@@ -80,8 +85,9 @@ header
 					align-items: center
 					width: 170px
 					&__img
-						width: 40px
-						height: 43px
+						display: block
+						width: 30px
+						height: 33px
 					&__subtitle
 						font-weight: 500
 						font-size: 16px
@@ -89,7 +95,7 @@ header
 						text-align: center
 						text-decoration: none
 						position: relative
-						&:hover 
+						&:hover, &:focus
 							color: $hover-color
 							&::after
 								position: absolute
